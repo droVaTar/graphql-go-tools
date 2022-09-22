@@ -5,9 +5,9 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/drovatar/graphql-go-tools/pkg/astparser"
 	"github.com/jensneuse/diffview"
 	"github.com/sebdah/goldie"
-	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
 )
 
 func TestGenerator_Generate(t *testing.T) {

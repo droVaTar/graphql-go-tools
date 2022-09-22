@@ -1,8 +1,8 @@
 package sdlmerge
 
 import (
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/pkg/astvisitor"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/astvisitor"
 )
 
 func newRemoveObjectTypeDefinitionDirective(directives ...string) *removeObjectTypeDefinitionDirective {

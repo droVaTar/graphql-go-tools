@@ -9,12 +9,12 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/pkg/astimport"
-	"github.com/wundergraph/graphql-go-tools/pkg/astvisitor"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/resolve"
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/literal"
-	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/astimport"
+	"github.com/drovatar/graphql-go-tools/pkg/astvisitor"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/resolve"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/literal"
+	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
 )
 
 type Planner struct {

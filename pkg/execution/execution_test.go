@@ -18,11 +18,11 @@ import (
 	"github.com/sebdah/goldie"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/pkg/execution/datasource"
-	"github.com/wundergraph/graphql-go-tools/pkg/introspection"
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/literal"
-	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/execution/datasource"
+	"github.com/drovatar/graphql-go-tools/pkg/introspection"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/literal"
+	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
 )
 
 // nolint
@@ -255,7 +255,7 @@ func TestExecution(t *testing.T) {
 														Value: []byte(graphQL2.URL + "/graphql"),
 													},
 													&datasource.StaticVariableArgument{
-														Name: literal.QUERY,
+														Name:  literal.QUERY,
 														Value: []byte(`query q1($id: String!){userPets(id: $id){	__typename name nickname... on Dog {woof} ... on Cat {meow}}}`),
 													},
 													&datasource.ObjectVariableArgument{
@@ -784,7 +784,7 @@ func genField() Field {
 												Value: []byte("localhost:8002/graphql"),
 											},
 											&datasource.StaticVariableArgument{
-												Name: literal.QUERY,
+												Name:  literal.QUERY,
 												Value: []byte(`query q1($id: String!){userPets(id: $id){	__typename name nickname... on Dog {woof} ... on Cat {meow}}}`),
 											},
 											&datasource.ObjectVariableArgument{

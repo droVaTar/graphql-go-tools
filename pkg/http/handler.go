@@ -8,7 +8,7 @@ import (
 	"github.com/gobwas/ws"
 	log "github.com/jensneuse/abstractlogger"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/execution"
+	"github.com/drovatar/graphql-go-tools/pkg/execution"
 )
 
 const (

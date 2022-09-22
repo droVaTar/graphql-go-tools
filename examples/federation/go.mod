@@ -1,14 +1,14 @@
-module github.com/wundergraph/graphql-go-tools/examples/federation
+module github.com/drovatar/graphql-go-tools/examples/federation
 
 go 1.18
 
 require (
-	github.com/99designs/gqlgen v0.13.1-0.20210728041543-7e38dd46943c
+	github.com/99designs/gqlgen v0.17.13
+	github.com/drovatar/graphql-go-tools v0.0.0-00010101000000-000000000000
 	github.com/gobwas/ws v1.0.4
-	github.com/gorilla/websocket v1.4.2
+	github.com/gorilla/websocket v1.5.0
 	github.com/jensneuse/abstractlogger v0.0.4
-	github.com/vektah/gqlparser/v2 v2.2.0
-	github.com/wundergraph/graphql-go-tools v0.0.0-00010101000000-000000000000
+	github.com/vektah/gqlparser/v2 v2.4.6
 	go.uber.org/atomic v1.9.0
 	go.uber.org/zap v1.18.1
 )
@@ -32,8 +32,9 @@ require (
 	github.com/klauspost/compress v1.14.4 // indirect
 	github.com/konsorten/go-windows-terminal-sequences v1.0.2 // indirect
 	github.com/logrusorgru/aurora v0.0.0-20200102142835-e9ef32dff381 // indirect
-	github.com/mattn/go-colorable v0.1.4 // indirect
-	github.com/mattn/go-isatty v0.0.12 // indirect
+	github.com/logrusorgru/aurora/v3 v3.0.0 // indirect
+	github.com/mattn/go-colorable v0.1.12 // indirect
+	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/minio/highwayhash v1.0.2 // indirect
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect
@@ -59,6 +60,6 @@ require (
 	nhooyr.io/websocket v1.8.7 // indirect
 )
 
-replace github.com/wundergraph/graphql-go-tools/examples/chat => ./../chat
+replace github.com/drovatar/graphql-go-tools/examples/chat => ./../chat
 
-replace github.com/wundergraph/graphql-go-tools => ../../
+replace github.com/drovatar/graphql-go-tools => ../../

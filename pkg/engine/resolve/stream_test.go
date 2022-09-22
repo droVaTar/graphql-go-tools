@@ -8,7 +8,7 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/literal"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/literal"
 )
 
 func TestArrayStream(t *testing.T) {

@@ -6,7 +6,7 @@ package astimport
 import (
 	"fmt"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
 )
 
 // Importer imports Nodes into an existing AST.

@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
-	graphqlDataSource "github.com/wundergraph/graphql-go-tools/pkg/engine/datasource/graphql_datasource"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/plan"
+	"github.com/drovatar/graphql-go-tools/pkg/astparser"
+	graphqlDataSource "github.com/drovatar/graphql-go-tools/pkg/engine/datasource/graphql_datasource"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/plan"
 )
 
 func TestNewEngineV2Configuration(t *testing.T) {

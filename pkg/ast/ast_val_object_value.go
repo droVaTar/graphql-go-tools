@@ -1,6 +1,6 @@
 package ast
 
-import "github.com/wundergraph/graphql-go-tools/pkg/lexer/position"
+import "github.com/drovatar/graphql-go-tools/pkg/lexer/position"
 
 // ObjectValue
 // example:

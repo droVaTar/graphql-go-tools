@@ -3,8 +3,8 @@ package ast
 import (
 	"math"
 
-	"github.com/wundergraph/graphql-go-tools/internal/pkg/unsafebytes"
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/position"
+	"github.com/drovatar/graphql-go-tools/internal/pkg/unsafebytes"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/position"
 )
 
 type OperationType int

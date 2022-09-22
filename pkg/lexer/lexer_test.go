@@ -9,9 +9,9 @@ import (
 	"github.com/jensneuse/diffview"
 	"github.com/sebdah/goldie"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/keyword"
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/token"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/keyword"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/token"
 )
 
 func TestLexer_Peek_Read(t *testing.T) {

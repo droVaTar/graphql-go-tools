@@ -16,10 +16,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	. "github.com/wundergraph/graphql-go-tools/pkg/engine/datasourcetesting"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/resolve"
-	"github.com/wundergraph/graphql-go-tools/pkg/testing/subscriptiontesting"
+	. "github.com/drovatar/graphql-go-tools/pkg/engine/datasourcetesting"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/plan"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/resolve"
+	"github.com/drovatar/graphql-go-tools/pkg/testing/subscriptiontesting"
 )
 
 func TestGraphQLDataSource(t *testing.T) {
@@ -7059,7 +7059,7 @@ enum ErrorCode {
   TeamPlanInPersonalNamespace
   InvalidName
   UnableToDeployEnvironment
-  InvalidWunderGraphConfig
+  InvaliddrovatarConfig
   ApiEnvironmentNamespaceMismatch
   UnableToUpdateEdgesOnPersonalEnvironment
 }

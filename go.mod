@@ -1,4 +1,4 @@
-module github.com/wundergraph/graphql-go-tools
+module github.com/drovatar/graphql-go-tools
 
 go 1.18
 
@@ -68,6 +68,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/qri-io/jsonpointer v0.1.1 // indirect
+	github.com/quasilyte/go-ruleguard/dsl v0.3.21 // indirect
 	github.com/sirupsen/logrus v1.4.2 // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.3.0 // indirect

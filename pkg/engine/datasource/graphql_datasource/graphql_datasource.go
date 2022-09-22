@@ -9,19 +9,19 @@ import (
 	"net/http"
 
 	"github.com/buger/jsonparser"
+	"github.com/drovatar/graphql-go-tools/pkg/asttransform"
 	"github.com/tidwall/sjson"
-	"github.com/wundergraph/graphql-go-tools/pkg/asttransform"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/pkg/astnormalization"
-	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
-	"github.com/wundergraph/graphql-go-tools/pkg/astprinter"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/datasource/httpclient"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/resolve"
-	"github.com/wundergraph/graphql-go-tools/pkg/federation"
-	"github.com/wundergraph/graphql-go-tools/pkg/lexer/literal"
-	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/astnormalization"
+	"github.com/drovatar/graphql-go-tools/pkg/astparser"
+	"github.com/drovatar/graphql-go-tools/pkg/astprinter"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/datasource/httpclient"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/plan"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/resolve"
+	"github.com/drovatar/graphql-go-tools/pkg/federation"
+	"github.com/drovatar/graphql-go-tools/pkg/lexer/literal"
+	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
 )
 
 type Planner struct {
@@ -994,22 +994,25 @@ Skips replace when:
 Example transformation:
 Original schema definition:
 
-type Query {
-	serviceOne(serviceOneArg: String): ServiceOneResponse
-	serviceTwo(serviceTwoArg: Boolean): ServiceTwoResponse
-}
-type ServiceOneResponse {
-	fieldOne: String!
-	countries: [Country!]! # nested datasource without explicit field path
-}
-type ServiceTwoResponse {
-	fieldTwo: String
-	serviceOneField: String
-	serviceOneResponse: ServiceOneResponse # nested datasource with implicit field path "serviceOne"
-}
-type Country {
-	name: String!
-}
+	type Query {
+		serviceOne(serviceOneArg: String): ServiceOneResponse
+		serviceTwo(serviceTwoArg: Boolean): ServiceTwoResponse
+	}
+
+	type ServiceOneResponse {
+		fieldOne: String!
+		countries: [Country!]! # nested datasource without explicit field path
+	}
+
+	type ServiceTwoResponse {
+		fieldTwo: String
+		serviceOneField: String
+		serviceOneResponse: ServiceOneResponse # nested datasource with implicit field path "serviceOne"
+	}
+
+	type Country {
+		name: String!
+	}
 
 `serviceOneResponse` field of a `ServiceTwoResponse` is nested but has a field path that exists on the Query type
 - In this case definition will not be modified
@@ -1019,24 +1022,25 @@ type Country {
 
 Modified schema definition:
 
-schema {
-   query: ServiceOneResponse
-}
+	schema {
+	   query: ServiceOneResponse
+	}
 
-type ServiceOneResponse {
-   fieldOne: String!
-   countries: [Country!]!
-}
+	type ServiceOneResponse {
+	   fieldOne: String!
+	   countries: [Country!]!
+	}
 
-type ServiceTwoResponse {
-   fieldTwo: String
-   serviceOneField: String
-   serviceOneResponse: ServiceOneResponse
-}
+	type ServiceTwoResponse {
+	   fieldTwo: String
+	   serviceOneField: String
+	   serviceOneResponse: ServiceOneResponse
+	}
 
-type Country {
-   name: String!
-}
+	type Country {
+	   name: String!
+	}
+
 Refer to pkg/engine/datasource/graphql_datasource/graphql_datasource_test.go:632
 Case name: TestGraphQLDataSource/nested_graphql_engines
 

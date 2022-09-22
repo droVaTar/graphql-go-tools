@@ -9,7 +9,7 @@ import (
 	"github.com/buger/jsonparser"
 	"github.com/qri-io/jsonschema"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
 )
 
 type options struct {

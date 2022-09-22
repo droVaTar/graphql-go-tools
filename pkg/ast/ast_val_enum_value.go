@@ -1,7 +1,7 @@
 package ast
 
 import (
-	"github.com/wundergraph/graphql-go-tools/internal/pkg/unsafebytes"
+	"github.com/drovatar/graphql-go-tools/internal/pkg/unsafebytes"
 )
 
 // EnumValue

@@ -7,16 +7,16 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/wundergraph/graphql-go-tools/pkg/ast"
-	"github.com/wundergraph/graphql-go-tools/pkg/astnormalization"
-	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
-	"github.com/wundergraph/graphql-go-tools/pkg/astprinter"
-	"github.com/wundergraph/graphql-go-tools/pkg/asttransform"
-	"github.com/wundergraph/graphql-go-tools/pkg/astvalidation"
-	"github.com/wundergraph/graphql-go-tools/pkg/engine/plan"
-	"github.com/wundergraph/graphql-go-tools/pkg/introspection"
-	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
-	"github.com/wundergraph/graphql-go-tools/pkg/pool"
+	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/drovatar/graphql-go-tools/pkg/astnormalization"
+	"github.com/drovatar/graphql-go-tools/pkg/astparser"
+	"github.com/drovatar/graphql-go-tools/pkg/astprinter"
+	"github.com/drovatar/graphql-go-tools/pkg/asttransform"
+	"github.com/drovatar/graphql-go-tools/pkg/astvalidation"
+	"github.com/drovatar/graphql-go-tools/pkg/engine/plan"
+	"github.com/drovatar/graphql-go-tools/pkg/introspection"
+	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
+	"github.com/drovatar/graphql-go-tools/pkg/pool"
 )
 
 type TypeFields struct {
