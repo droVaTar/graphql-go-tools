@@ -6,10 +6,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/drovatar/graphql-go-tools/internal/pkg/unsafeparser"
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
-	"github.com/drovatar/graphql-go-tools/pkg/astparser"
-	"github.com/drovatar/graphql-go-tools/pkg/astprinter"
+	"github.com/wundergraph/graphql-go-tools/internal/pkg/unsafeparser"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
+	"github.com/wundergraph/graphql-go-tools/pkg/astprinter"
 )
 
 // Create a new document with initialized slices.

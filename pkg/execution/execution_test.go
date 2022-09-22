@@ -18,11 +18,11 @@ import (
 	"github.com/sebdah/goldie"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
-	"github.com/drovatar/graphql-go-tools/pkg/execution/datasource"
-	"github.com/drovatar/graphql-go-tools/pkg/introspection"
-	"github.com/drovatar/graphql-go-tools/pkg/lexer/literal"
-	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/execution/datasource"
+	"github.com/wundergraph/graphql-go-tools/pkg/introspection"
+	"github.com/wundergraph/graphql-go-tools/pkg/lexer/literal"
+	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
 )
 
 // nolint

@@ -1,8 +1,8 @@
 package astnormalization
 
 import (
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
-	"github.com/drovatar/graphql-go-tools/pkg/astvisitor"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/astvisitor"
 )
 
 const (

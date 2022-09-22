@@ -3,10 +3,10 @@ package introspection_datasource
 import (
 	"testing"
 
-	"github.com/drovatar/graphql-go-tools/pkg/engine/datasourcetesting"
-	"github.com/drovatar/graphql-go-tools/pkg/engine/plan"
-	"github.com/drovatar/graphql-go-tools/pkg/engine/resolve"
-	"github.com/drovatar/graphql-go-tools/pkg/introspection"
+	"github.com/wundergraph/graphql-go-tools/pkg/engine/datasourcetesting"
+	"github.com/wundergraph/graphql-go-tools/pkg/engine/plan"
+	"github.com/wundergraph/graphql-go-tools/pkg/engine/resolve"
+	"github.com/wundergraph/graphql-go-tools/pkg/introspection"
 )
 
 const (

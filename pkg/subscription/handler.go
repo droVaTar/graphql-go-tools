@@ -9,9 +9,9 @@ import (
 
 	"github.com/jensneuse/abstractlogger"
 
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
-	"github.com/drovatar/graphql-go-tools/pkg/engine/resolve"
-	"github.com/drovatar/graphql-go-tools/pkg/graphql"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/engine/resolve"
+	"github.com/wundergraph/graphql-go-tools/pkg/graphql"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 
 	log "github.com/jensneuse/abstractlogger"
 
-	"github.com/drovatar/graphql-go-tools/pkg/graphql"
+	"github.com/wundergraph/graphql-go-tools/pkg/graphql"
 )
 
 const (

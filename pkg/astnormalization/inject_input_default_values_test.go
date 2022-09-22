@@ -1,7 +1,7 @@
 package astnormalization
 
 import (
-	"github.com/drovatar/graphql-go-tools/pkg/astvisitor"
+	"github.com/wundergraph/graphql-go-tools/pkg/astvisitor"
 	"testing"
 )
 

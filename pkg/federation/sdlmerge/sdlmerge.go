@@ -2,17 +2,17 @@ package sdlmerge
 
 import (
 	"fmt"
-	"github.com/drovatar/graphql-go-tools/pkg/asttransform"
-	"github.com/drovatar/graphql-go-tools/pkg/astvalidation"
-	"github.com/drovatar/graphql-go-tools/pkg/engine/plan"
+	"github.com/wundergraph/graphql-go-tools/pkg/asttransform"
+	"github.com/wundergraph/graphql-go-tools/pkg/astvalidation"
+	"github.com/wundergraph/graphql-go-tools/pkg/engine/plan"
 	"strings"
 
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
-	"github.com/drovatar/graphql-go-tools/pkg/astnormalization"
-	"github.com/drovatar/graphql-go-tools/pkg/astparser"
-	"github.com/drovatar/graphql-go-tools/pkg/astprinter"
-	"github.com/drovatar/graphql-go-tools/pkg/astvisitor"
-	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/astnormalization"
+	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
+	"github.com/wundergraph/graphql-go-tools/pkg/astprinter"
+	"github.com/wundergraph/graphql-go-tools/pkg/astvisitor"
+	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
 )
 
 const (

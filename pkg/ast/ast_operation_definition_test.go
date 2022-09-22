@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/drovatar/graphql-go-tools/internal/pkg/unsafeparser"
+	"github.com/wundergraph/graphql-go-tools/internal/pkg/unsafeparser"
 )
 
 func TestDocument_OperationNameExists(t *testing.T) {

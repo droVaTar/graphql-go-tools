@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/drovatar/graphql-go-tools/internal/pkg/unsafeparser"
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
-	"github.com/drovatar/graphql-go-tools/pkg/astnormalization"
-	"github.com/drovatar/graphql-go-tools/pkg/astparser"
-	"github.com/drovatar/graphql-go-tools/pkg/astprinter"
-	"github.com/drovatar/graphql-go-tools/pkg/operationreport"
+	"github.com/wundergraph/graphql-go-tools/internal/pkg/unsafeparser"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/astnormalization"
+	"github.com/wundergraph/graphql-go-tools/pkg/astparser"
+	"github.com/wundergraph/graphql-go-tools/pkg/astprinter"
+	"github.com/wundergraph/graphql-go-tools/pkg/operationreport"
 )
 
 type options struct {
@@ -3658,7 +3658,7 @@ func TestExecutionValidation(t *testing.T) {
 					ValidArguments(), Valid, withDisableNormalization())
 			})
 			t.Run("complex values", func(t *testing.T) {
-				runWithDefinition(drovatarSchema, `
+				runWithDefinition(wundergraphSchema, `
 					query FirstNamespace($id: String $mode: QueryMode) {
 						findFirstnamespace(where: {id: {equals: $id mode: $mode}}) {
 							id
@@ -3673,7 +3673,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, ValidArguments(), Valid)
 			})
 			t.Run("complex values", func(t *testing.T) {
-				runWithDefinition(drovatarSchema, `
+				runWithDefinition(wundergraphSchema, `
 					query FirstNamespace($id: String $mode: QueryMode) {
 						findFirstnamespace(where: {id: {equals: $id mode: $mode}}) {
 							id
@@ -3688,7 +3688,7 @@ func TestExecutionValidation(t *testing.T) {
 					`, Values(), Valid)
 			})
 			t.Run("complex values with input object", func(t *testing.T) {
-				runWithDefinition(drovatarSchema, `
+				runWithDefinition(wundergraphSchema, `
 					query FirstAPI($a: String $b: StringFilter) {
 						findFirstapi(where: {id: {equals: $a} AND: {name: $b}}) {
 							id
@@ -5228,7 +5228,7 @@ directive @fromClaim(
 ) on VARIABLE_DEFINITION
 `
 
-const drovatarSchema = `
+const wundergraphSchema = `
 
 schema {
 	query: Query

@@ -1,7 +1,7 @@
 package graph
 
 import (
-	"github.com/drovatar/graphql-go-tools/pkg/testing/federationtesting/reviews/graph/model"
+	"github.com/wundergraph/graphql-go-tools/pkg/testing/federationtesting/reviews/graph/model"
 )
 
 var reviews = []*model.Review{

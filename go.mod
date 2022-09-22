@@ -1,4 +1,4 @@
-module github.com/drovatar/graphql-go-tools
+module github.com/wundergraph/graphql-go-tools
 
 go 1.18
 

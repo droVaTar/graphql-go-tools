@@ -3,7 +3,7 @@ package astvisitor
 import (
 	"fmt"
 
-	"github.com/drovatar/graphql-go-tools/pkg/ast"
+	"github.com/wundergraph/graphql-go-tools/pkg/ast"
 )
 
 type SimpleWalker struct {
